@@ -45,7 +45,35 @@
                     </dd>
                 </div>
             </dl>
-            <a href="" class="repo-link"></a>
+            <a href="https://github.com/BekhaDavlatov/new-toDo-list.git" class="repo-link" target="_blank"
+                rel="noreferrer">
+                View source GitHub Pages
+            </a>
+        </section>
+        <section class="todo-card">
+            <form class="todo-form" autocomplete="off">
+                <label class="sr-only" for="todo-input">
+                    New Todo
+                </label>
+                <input class="todo-input" type="text" id="todo-input" name="todo" maxlength="120"
+                    placeholder="Add a task..." aria-label="New todo" required>
+                <button class="todo-button" type="submit">
+                    Add task
+                </button>
+                <div class="toolbar" aria-label="todo filter">
+                    <div class="filter" role="group" aria-label="Filter todo">
+                        <button type="button" data-filter="all" class="filter-button active">
+                            All
+                        </button>
+                        <button class="filter-button" type="button" data-filter="active">Active</button>
+                        <button class="filter-button" type="button" data-filter="completed">Completed</button>
+                    </div>
+                    <button class="clear-button" type="button">Clear completed</button>
+                </div>
+                <div class="todo-meta" aria-live="polite">
+
+                </div>
+            </form>
         </section>
     </main>
 
