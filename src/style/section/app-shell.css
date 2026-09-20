@@ -1,0 +1,9 @@
+.app-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+    min-height: 100vh;
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+    gap: 4rem 0;
+    align-items: center;
+}

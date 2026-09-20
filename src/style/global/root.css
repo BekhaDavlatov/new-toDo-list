@@ -1,0 +1,13 @@
+:root {
+    --color-background: #10111f;
+    --color-surface: rgba(255, 255, 255, 0.085);
+    --color-surface-border: rgba(255, 255, 255, 0.16);
+    --color-text: #f8fafc;
+    --color-muted: #cbd5e1;
+    --color-muted-strong: #94a3b8;
+    --color-accent: #38bdf8;
+    --color-accent-strong: #0ea5e9;
+    --color-success: #34d399;
+    --color-danger: #d02841;
+    --shadow-card: 0 24px 80px rgba(0, 0, 0, 0.80);
+}

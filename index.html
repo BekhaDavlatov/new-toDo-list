@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style/main.css">
     <title>ToDo List</title>
 </head>
 
 <body>
-    <main>
+    <main class="app-shell" aria-labelledby="app-title">
         <section class="hero-card">
             <p class="ayebrow">
                 Vanila JavaScript · LocalStorage · Github Pages
@@ -20,7 +21,7 @@
                 " A small dependecy-free task list that runs in the browser and keeps data on the device."
             </p>
             <dl class="scopi-list">
-                <div>
+                <div class="scopi-containers">
                     <dt>
                         No build step
                     </dt>
@@ -28,7 +29,7 @@
                         Static HTML, CSS, and JavaScript
                     </dd>
                 </div>
-                <div>
+                <div class="scopi-containers">
                     <dt>
                         Local state
                     </dt>
@@ -36,7 +37,7 @@
                         Saved with browser localStorage
                     </dd>
                 </div>
-                <div>
+                <div class="scopi-containers">
                     <dt>
                         Static deploy
                     </dt>
@@ -60,23 +61,26 @@
                 <button class="todo-button" type="submit">
                     Add task
                 </button>
-                <div class="toolbar" aria-label="todo filter">
-                    <div class="filter" role="group" aria-label="Filter todo">
-                        <button type="button" data-filter="all" class="filter-button active">
-                            All
-                        </button>
-                        <button class="filter-button" type="button" data-filter="active">Active</button>
-                        <button class="filter-button" type="button" data-filter="completed">Completed</button>
-                    </div>
-                    <button class="clear-button" type="button">Clear completed</button>
-                </div>
-                <div class="todo-meta" aria-live="polite">
-
-                </div>
             </form>
+            <div class="toolbar" aria-label="todo filter">
+                <div class="filter" role="group" aria-label="Filter todo">
+                    <button type="button" data-filter="all" class="filter-button active">
+                        All
+                    </button>
+                    <button class="filter-button" type="button" data-filter="active">Active</button>
+                    <button class="filter-button" type="button" data-filter="completed">Completed</button>
+                </div>
+                <button class="clear-button" type="button">Clear completed</button>
+            </div>
+            <div class="todo-meta" aria-live="polite">
+                <span class="todo-count">0 task left</span>
+                <span class="storage-note">Saved locally in this browser</span>
+            </div>
+            <ul class="todo-list" aria-label="Todo items"></ul>
+            <p class="empty-state">No tasks yet. Add one to start.</p>
+
         </section>
     </main>
-
 </body>
 
 </html>
